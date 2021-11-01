@@ -20,9 +20,16 @@
         <div class="row" id="about">
           <div class="col-sm-8">
             <h3>About the project</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus lacinia aliquam. Nulla euismod ultrices euismod. Vivamus cursus odio eu accumsan venenatis. Praesent hendrerit augue at nibh facilisis gravida. Nam sodales lectus nisi, et sagittis nulla sollicitudin in. Integer convallis orci non eros venenatis, ut lobortis massa laoreet. Ut metus tellus, lobortis vitae eros at, porttitor imperdiet nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus accumsan sodales tortor, porttitor pretium erat volutpat nec. Curabitur hendrerit lacus at lorem venenatis lacinia id ac massa. Pellentesque lacinia libero bibendum felis egestas ultrices. Etiam vehicula purus sed mattis sagittis.</p>
+            <p>
+              Microphighter is a fun and interactive AR game where the users will try to eat incoming bacterias before they reach the blood 
+              system and can cause a fever. On this website we will present the development of Microphigter and how the app looks like today. 
+              <br></br>
+              During this project we have been motivated to learn more about AR development and integrate parts of the immune system in an 
+              educational way. This project has been centered around three main goals. The first goal has been to create an interactive 
+              experience in an AR environment. The second goal has been to create a cool and visually pleasing experience. And the third 
+              goal was to create a good learning experience about the immune system. 
+            </p>
             <br></br>
-            <p style="color:powderblue;">goal and motivation of the project</p>
           </div>
           <div class="col-sm-4">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -49,37 +56,69 @@
 
         <!-- The app -->
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-7">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/3Wq2Vhx9sa8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <img></img>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-5">
               <h3>The development of the app</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus lacinia aliquam. Nulla euismod ultrices euismod. Vivamus cursus odio eu accumsan venenatis. Praesent hendrerit augue at nibh facilisis gravida. Nam sodales lectus nisi, et sagittis nulla sollicitudin in. Integer convallis orci non eros venenatis, ut lobortis massa laoreet. Ut metus tellus, lobortis vitae eros at, porttitor imperdiet nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus accumsan sodales tortor, porttitor pretium erat volutpat nec. Curabitur hendrerit lacus at lorem venenatis lacinia id ac massa. Pellentesque lacinia libero bibendum felis egestas ultrices. Etiam vehicula purus sed mattis sagittis.</p>
-              <p style="color:powderblue;">Explanation and Justification of the graphics and interaction technologies used and developed</p>
+              <p>
+                In the first stage of the development we used Unity to create an MVP of the app. We only had two game objects, 
+                the macrophighter and the bacteria, and they were very simple objects with no textures or details. The game logic was 
+                also very simple, the bacterias could only move in one direction and it was a never-ending game. 
+                <br></br>
+                From the MVP we improved graphics, interactions and game logic. First we modeled new and more detailed 3D game objects 
+                in <b>Blender</b>. These models were imported in <b>Unity</b> where the whole game was put together. We had to specify a 
+                game field and to do that we used <b>AR fondation</b> to implement image tracking. The center of the game field was then 
+                displayed on the image while another 3D model marked the border of the field. To improve the interactions we implemented 
+                both haptics and sounds, as well as UI objects for controls and screen info. To step up the game logic we implemented 
+                animations on the bacteria to make them move in a randomized pattern, as well as a counter that ends the game if you have 
+                missed too many bacterias.
+                <br></br>
+                In the final upgrade we have implemented a ‘no go zone’, making it impossible for you to cheat by standing too close to 
+                the wound where the bacterias can get in. We also worked on improving the haptics and animations. 
+                <br></br>
+              </p>
             </div>
         </div>
 
         <!-- The outcome -->
         <div class="row">
-          <div class="col-sm-6">
-            <h3>Challanges & Learnings</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus lacinia aliquam. Nulla euismod ultrices euismod. Vivamus cursus odio eu accumsan venenatis. Praesent hendrerit augue at nibh facilisis gravida. Nam sodales lectus nisi, et sagittis nulla sollicitudin in. Integer convallis orci non eros venenatis, ut lobortis massa laoreet. Ut metus tellus, lobortis vitae eros at, porttitor imperdiet nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus accumsan sodales tortor, porttitor pretium erat volutpat nec. Curabitur hendrerit lacus at lorem venenatis lacinia id ac massa. Pellentesque lacinia libero bibendum felis egestas ultrices. Etiam vehicula purus sed mattis sagittis.</p>
-            <p style="color:powderblue;">Challanges + obstacles + lessons learned</p> 
+          <div class="col-sm-7">
+            <h3>Challenges & Learnings</h3>
+            <p>
+              In a very early stage, when we did our first user test, we learned that we had to work more on the interaction part. We 
+              learned that the instructions of how the game worked was lacking and that the user didn’t get enough feedback to understand 
+              if the user managed to complete tasks. We implemented several things to improve the interaction. First of all we onboarded 
+              the user to the app by implementing a start screen with instructions. Then we implemented both haptics and sounds to indicate 
+              that the user caught a bacteria. And in the final stage we also implemented animations to show this. 
+              <br></br>
+              When we worked with the visual and graphics we had some difficulties exporting all materials from Blender to Unity. This was 
+              a problem we didn’t really expect since we believed Blender and Unity should be easy to use together. We tried to work with 
+              different file formats but in the end we had to create and add the materials in Unity. 
+              <br></br>
+              Throughout the whole project we have been challenged in balancing the educational part with the game aspects without making 
+              this project too large and complex. We wanted the game to be a fun way to learn about the very complex system that the immune 
+              system actually is. Therefore the game logic has always been reflected by the real immune system, to try to describe real 
+              situations. Although, we had to scoop the project and in an early stage we tried to define what parts of the immune system 
+              we should focus on. We got help from an expert in the field, and she also confirmed the fact that we had to scoop the project 
+              and only focus on a very little part of the immune system. Therefore, the project became more of a game inspired by the immune 
+              system rather than an educational product. All this scooping and finding a good balance turned out to be a very good learning 
+              experience.
+            </p>
           </div>
-          <div class="col-sm-6">
-            <p>placeholder for the demo</p>
+          <div class="col-sm-5">
+            <h1>placeholder for the demo</h1>
           </div>
         </div>
 
         <!-- Group members -->
           <h1>The team</h1>
-          <p style="color:powderblue;">names + contacts + Individual Contributions</p>
         <div class="row">
             <div class="col-sm-2">
               <img class="profilepicture"/>
               <h5>Johanna</h5>
-              <p>email@kth.se</p>
+              <p>simfors@kth.se</p>
               <a data-toggle="collapse" href="#collapseJohanna" role="button" aria-expanded="false" aria-controls="collapseExample">
                 More...
               </a>
@@ -92,7 +131,7 @@
             <div class="col-sm-2">
               <img class="profilepicture"/>
               <h5>Leo</h5>
-              <p>email@kth.se</p>
+              <p>leobergq@kth.se</p>
               <a data-toggle="collapse" href="#collapseLeo" role="button" aria-expanded="false" aria-controls="collapseExample">
                 More...
               </a>
@@ -105,7 +144,7 @@
             <div class="col-sm-2">
               <img class="profilepicture"/>
               <h5>Moa</h5>
-              <p>email@kth.se</p>
+              <p>moaeng@kth.se</p>
               <a data-toggle="collapse" href="#collapseMoa" role="button" aria-expanded="false" aria-controls="collapseExample">
                 More...
               </a>
@@ -118,7 +157,7 @@
             <div class="col-sm-2">
               <img class="profilepicture"/>
               <h5>Nils</h5>
-              <p>email@kth.se</p>
+              <p>nmerkel@kth.se</p>
               <a data-toggle="collapse" href="#collapseNils" role="button" aria-expanded="false" aria-controls="collapseExample">
                 More...
               </a>
@@ -131,7 +170,7 @@
             <div class="col-sm-2">
               <img class="profilepicture"/>
               <h5>Olle</h5>
-              <p>email@kth.se</p>
+              <p>ohovmark@kth.se</p>
               <a data-toggle="collapse" href="#collapseOlle" role="button" aria-expanded="false" aria-controls="collapseExample">
                 More...
               </a>
@@ -142,6 +181,16 @@
               </div>
             </div>
         </div>
+
+        <!-- Related projects -->
+        <div class="row">
+          <div class="col-sm-7">
+            <h3>Related projects</h3>
+            placeholder :))
+          </div>
+        </div>
+
+
       </div>
 
 
